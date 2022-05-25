@@ -1,11 +1,11 @@
 package com.incrowdsports.task
 
-import com.incrowdsports.task.data.FixtureService
-import com.incrowdsports.task.data.models.Fixture
-import com.incrowdsports.task.data.models.NetworkResponse
-import com.incrowdsports.task.data.models.Team
-import com.incrowdsports.task.data.models.Venue
-import com.incrowdsports.task.ui.fixture.FixtureListViewModel
+import com.incrowdsports.task.model.api.FixtureService
+import com.incrowdsports.task.model.data.Fixture
+import com.incrowdsports.task.model.data.NetworkResponse
+import com.incrowdsports.task.model.data.Team
+import com.incrowdsports.task.model.data.Venue
+import com.incrowdsports.task.ui.list.FixtureListViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.toList

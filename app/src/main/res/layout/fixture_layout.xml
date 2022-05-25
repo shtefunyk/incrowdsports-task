@@ -5,14 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    >
+    android:layout_margin="@dimen/spacing_small">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        >
+        android:padding="@dimen/spacing_small">
 
         <TextView
             android:id="@+id/competition"
@@ -22,55 +20,50 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Competition"
-            />
+            tools:text="Competition" />
 
         <TextView
             android:id="@+id/dateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="8th March - 19:00"
             app:layout_constraintBottom_toTopOf="@id/period"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/competition"
-            />
+            app:layout_constraintTop_toBottomOf="@id/competition" />
 
         <TextView
             android:id="@+id/period"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8px"
             app:layout_constraintBottom_toTopOf="@id/venue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/dateTime"
-            tools:text="Period"
-            />
+            tools:text="Period" />
 
         <TextView
             android:id="@+id/venue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/spacing_small"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/period"
-            tools:text="Venue"
-            />
+            tools:text="Venue" />
 
         <TextView
             android:id="@+id/homeName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="@dimen/text_large"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/spacing_large"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/period"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Home Name"
-            />
+            tools:text="Home Name" />
 
         <TextView
             android:id="@+id/homeScore"
@@ -79,19 +72,20 @@
             app:layout_constraintEnd_toEndOf="@id/homeName"
             app:layout_constraintStart_toStartOf="@id/homeName"
             app:layout_constraintTop_toBottomOf="@id/homeName"
-            tools:text="22"
-            />
+            tools:text="22" />
 
         <TextView
             android:id="@+id/awayName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="@dimen/text_large"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/spacing_large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/period"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Away Name"
-            />
+            tools:text="Away Name" />
 
         <TextView
             android:id="@+id/awayScore"
@@ -100,8 +94,8 @@
             app:layout_constraintEnd_toEndOf="@id/awayName"
             app:layout_constraintStart_toStartOf="@id/awayName"
             app:layout_constraintTop_toBottomOf="@id/awayName"
-            tools:text="2"
-            />
+            tools:text="2" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
